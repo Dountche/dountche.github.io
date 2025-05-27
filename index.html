@@ -1,61 +1,52 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Koné Dountchè Issa</title>
   <style>
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
+    /* ==== Reset & Base Styles ==== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     html { font-family: Arial, sans-serif; line-height: 1.6; }
     body { background: #F5F5F5; color: #333333; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
     h1, h2, h3 { text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.5rem; }
     h1 { font-size: 2rem; }
     h2 { font-size: 1.4rem; margin-top: 2rem; }
     h3 { font-size: 1.1rem; margin-top: 1.5rem; }
-    p, li { margin-bottom: 0.5rem; }
-    p {font-size: 15px;}
-    section { margin-bottom: 2rem; padding: 1rem; border-radius: 8px; }
-    hr { border: none; border-top: 1px solid #ccc; margin: 1.5rem 0; }
+    p, li { margin-bottom: 0.5rem; font-size: 15px; }
+    section { margin-bottom: 2rem; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); transition: 0.5s; }
+    section:hover { transform: translateY(-2px) scale(1.02); transition: 0.5s; }
+    hr { border: none; border-top: 1px solid #ccc; margin: 1.5rem 0; }/* ==== Header ==== */
+.header { text-align: center; }
+.header h1 { margin-bottom: 0.2rem; }
+.contact { font-size: 0.9rem; }
+.contact span { display: inline-block; margin: 0 0.5rem; }
+.contact p { margin: 0.2rem 0; }
 
-    section {
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      transition: 0.5s;
-   }
-   section:hover{
-    transform: translateY(-2px);
-    transform: scale(1.02);
-    transition: 0.5s;
-   } 
+/* ==== Layout two columns ==== */
+.row { display: flex; flex-wrap: wrap; }
+.col { flex: 1; padding: 0 1rem; min-width: 250px; }
 
-    .header { text-align: center; }
-    .header h1 { margin-bottom: 0.2rem; }
-    .contact { font-size: 0.9rem; }
-    .contact span { display: inline-block; margin: 0 0.5rem; }
+/* ==== Section Background Colors ==== */
+#profil { background-color: #5B8FF9; color: #fff; }
+#competences { background-color: #4A9A2E; color: #fff; }
+#projets { background-color: #CC7A00; color: #FFF; }
+#infos { background-color: #fff; color: #333333; }
 
-    .row { display: flex; flex-wrap: wrap; }
-    .col { flex: 1; padding: 0 1rem; min-width: 250px; }
+ul.skills { list-style: none; columns: 2; }
+ul.skills li { break-inside: avoid; }
 
-    #profil { background-color: #5B8FF9; color: #fff; }
-    #competences { background-color: #4A9A2E; color: #fff; }
-    #projets { background-color: #CC7A00; color: #FFF; }
-    #infos { background-color: #fff; color: #333333; }
+/* ==== Projets ==== */
+.projet { margin-bottom: 1.5rem; }
+.projet h3 { margin-bottom: 0.3rem; }
+.projet p { margin-left: 1rem; }
 
-    ul.skills { list-style: none; columns: 2; }
-    ul.skills li { break-inside: avoid; }
+/* ==== Footer ==== */
+footer { text-align: center; font-size: 0.8rem; margin-top: 3rem; color: #777; }
 
-    /* ==== Projets ==== */
-    .projet { margin-bottom: 1.5rem; }
-    .projet h3 { margin-bottom: 0.3rem; }
-    .projet p { margin-left: 1rem; }
-
-    /* ==== Footer ==== */
-    footer { text-align: center; font-size: 0.8rem; margin-top: 3rem; color: #777; }
   </style>
 </head>
 <body>
-  <!-- header -->
+  <!-- HEADER -->
   <header class="header">
     <h1>Koné Dountchè Issa</h1>
     <div class="contact">
@@ -70,20 +61,14 @@
       </p>
     </div>
   </header>
-  <hr>
-
-  <!-- profil -->
-  <section id="profil">
-    <h2>Profil</h2>
-    <p>Étudiant en 2ème année DTS STIC (Licence) à l'INP-HB, passionné par l'électronique, la programmation, la robotique et la cybersécurité et l'IA. Je recherche un stage en développement web ou mobile, en electronique, en Administration reseau ou en télécommunication.</p>
-  </section>
-
-  <!-- Mes formations & langues-->
-  <div class="row">
+  <hr>  <!-- PROFIL -->  <section id="profil">
+    <h2>Objectif Professionnel</h2>
+    <p>Étudiant en deuxième année du cycle Technicien Supérieur DTS (grade licence) en Science et Technologie de l’Information et de la Communication (STIC) option Informatique CSI à l’INP-HB, je suis passionné par l’Electronique, la programmation, la robotique, la cybersécurité, l'IA et bien d’autres domaines liés à la technologie. À la recherche d’un stage professionnel, je souhaite appliquer mes compétences techniques, approfondir mes connaissances et contribuer à des projets innovants en entreprise.</p>
+  </section>  <!-- FORMATIONS & LANGUES -->  <div class="row">
     <div class="col">
       <section id="infos">
         <h2>Formation</h2>
-        <p><strong>2024 – 2025</strong> | <strong>2ème année DTS STIC</strong> Option Inofrmatique CSI (Licence), ESI/INP-HB, Yamoussoukro</p>
+        <p><strong>2024 – 2025</strong> | <strong>2ème année DTS STIC</strong> Option Informatique CSI (Licence), ESI/INP-HB, Yamoussoukro</p>
         <p><strong>2022 – 2023</strong> | <strong>Baccalauréat D</strong>, Lycée Mixte 1, Yamoussoukro</p>
         <p><strong>2019 – 2020</strong> | <strong>BEPC</strong>, Collège Miguita, Ouangolodougou</p>
       </section>
@@ -91,58 +76,99 @@
     <div class="col">
       <section id="infos">
         <h2>Langues & Centres d'intérêt</h2>
-        <p><strong>Langues</strong> : Français (natif), Anglais (moyen)</p>
-        <p><strong>Centres d'intérêt</strong> : Bricolage, Programmation, Termux, club Robotique, Musique, Mangas,</p>
+        <p><strong>Langues :</strong> Français (courant), Anglais (intermédiaire)</p>
+        <p><strong>Centres d'intérêt :</strong> Sports (basketball, athlétisme), Termux, programmation, bricolage, jeux vidéo, cinéma, musique, Associations (ADUTI)</p>
       </section>
     </div>
-  </div>
-
-  <!-- competences -->
-  <section id="competences">
+  </div>  <!-- COMPÉTENCES -->  <section id="competences">
     <h2>Compétences Techniques</h2>
     <ul class="skills">
-      <li><strong>Langages :</strong> C, C++, C#, Java, Python, JavaScript, PHP, SQL</li>
-      <li><strong>Web :</strong> HTML5, CSS3, JavaScript (ES6+), PHP/MySQL</li>
-      <li><strong>Microcontrôleurs :</strong> Arduino, ESP32</li>
-      <li><strong>Systèmes :</strong>Linux (Kali, Ubuntu), Windows server</li>
-      <li><strong>Outils :</strong> Git, Visual Studio Code, Unity, Termux, TrebEdit, Cisco packet tracer, Proteus</li>
+      <li><strong>Bureautique :</strong> MS Word, Excel, PowerPoint, Access, Project</li>
+      <li><strong>Développement Informatique :</strong></li>
+      <ul>
+        <li>Programmation : Python, Java, C#, C++, C, JavaScript, PHP</li>
+        <li>Développement web : HTML, CSS, JavaScript, PHP</li>
+        <li>Frameworks : Laravel, React Native, Nest.js, Django, Bootstrap</li>
+        <li>Conception UI/UX et structuration des applications</li>
+        <li>Outils : VS Code, Visual Studio, Android Studio, Termux, TrebEdt, Cisco Packet Tracer, Proteus, Unity</li>
+      </ul>
+      <li><strong>Systèmes & Réseaux :</strong></li>
+      <ul>
+        <li>Administration des systèmes Windows & Linux (Kali, Ubuntu)</li>
+        <li>Gestion des réseaux et protocoles TCP/IP, DNS, DHCP</li>
+        <li>Configuration et sécurisation de réseaux</li>
+      </ul>
+      <li><strong>Bases de Données :</strong></li>
+      <ul>
+        <li>Conception et administration : MySQL, PostgreSQL, SQL</li>
+        <li>Analyse et conception de base de données (Merise)</li>
+      </ul>
+      <li><strong>Cloud Computing & Déploiement :</strong></li>
+      <ul>
+        <li>Hébergement et gestion de serveurs sur AWS</li>
+        <li>Déploiement d’applications web : EC2, Nginx, MySQL</li>
+      </ul>
     </ul>
-  </section>
+  </section>  <!-- PROJETS & EXPÉRIENCE -->  <section id="projets">
+    <h2>Projets Réalisés et Expériences Professionnelles</h2><div class="projet">
+  <h3>Plateforme web de gestion des bibliothèques de l’INP-HB (Avril 2025 – INPHB, Yamoussoukro)</h3>
+  <ul>
+    <li>Élaboration du cahier des charges et conception UI/UX</li>
+    <li>Développement d’une interface utilisateur intuitive (Front-end : Bootstrap, HTML, CSS, JS)</li>
+    <li>Conception et gestion de la base de données avec MERISE (Back-end : PHP, MySQL)</li>
+    <li>Hébergement sur InfinityFree (Lien : <a href="http://dtproject.ct.ws/" style="color: inherit; text-decoration: none;">Cliquez ici</a>)</li>
+  </ul>
+</div>
 
-  <!-- mes projets -->
-  <section id="projets">
-    <h2>Projets</h2>
-    <div class="projet">
-      <h3>Système de gestion des bibliothèques de l'INP-HB (PHP + HTML5)</h3>
-      <p>Conception front-end avec Boostrap et HTML5/CSS3, back-end PHP et Jquery , base MySQL Déploiement via infinityfree.</p>
-      <p>Lien du site : <a href="http://dtproject.ct.ws/">Cliquez ici </a></p>
-    </div>
-    <div class="projet">
-      <h3>Système de gestion des étudiants de l'INP-HB (Django + HTML5)</h3>
-      <p>Équipe BE BAse de donnée (2), INP-HB : Conception front-end avec Boostrap et HTML5/CSS3, back-end Django, base MySQL.</p>
-    </div>
-    <div class="projet">
-      <h3>Guide Touristique Interactif (React + Leaflet)</h3>
-      <p>Équipe UP PRO (3), INP-HB : conception front-end avec React.js et Leaflet, back-end Node.js/NestJS, base PostGIS. Déploiement via Docker.</p>
-    </div>
-    <div class="projet">
-      <h3>Collecte des données environnementeaux (ESP32 + MQ135 + ENS160)</h3>
-      <p>Équipe stagiaire (2) laboratoire LIEESE, INP-HB : MQ135 & capteur ENS160 et AHT ; collecte de données (temperatures et umidité, gaz CO2, NH3, CO ...), analyse et stockage en temps reel sur une base de donnée.</p>
-    </div>
-    <h3>Collecte IoT & Visualisation (ESP32 + AWS IoT)</h3>
-    <p>DHT11 & capteur AWT-038 : collecte de données, analyse et dashboard en temps réel sur AWS.</p>
-  </div>
-  <div class="projet">
-    <h3>Système automatique d'irrigation de plantes (ARDUINO)</h3>
-    <p>Équipe stagiaire (2) laboratoire LIEESE, INP-HB : DHT11, Relais & Électrovannes  : mesure de la l'humidité du sol et activation/désactivation des électrovannes par commutation des relais.</p>
-  </div>
+<div class="projet">
+  <h3>Système de gestion des étudiants de l’INP-HB (Mars 2025 – INPHB, Yamoussoukro)</h3>
+  <ul>
+    <li>Élaboration du cahier des charges et conception UI/UX</li>
+    <li>Développement d’une interface utilisateur intuitive (Front-end : Bootstrap, HTML, CSS, JS)</li>
+    <li>Conception et gestion de la base de données avec MERISE (Back-end : Django, MySQL)</li>
+  </ul>
+</div>
 
-  <h5>Et bien d'autres projets personnels sont à venir</h5>
-  </section>
+<div class="projet">
+  <h3>Déploiement d’une application web sur AWS (Février 2025 – INPHB, Yamoussoukro)</h3>
+  <ul>
+    <li>Déploiement de la plateforme Dolibarr sur AWS EC2</li>
+    <li>Configuration d’un serveur web Nginx et base de données MySQL</li>
+  </ul>
+</div>
 
-  <!-- mon contact -->
-  <footer>
-    <p>Merci de votre visite ! Pour plus d'informations, contactez-moi au <span>+225 05 74 55 19 14</span> ou à mon addresse <a href="mailto:fenikone@gmail.com" style="color: inherit; text-decoration: none;">fenikone@gmail.com</a>.</p>
+<div class="projet">
+  <h3>Application mobile de guide touristique numérique interactif (Depuis Janvier 2025 – INPHB Équipe Up Pro, Yamoussoukro)</h3>
+  <ul>
+    <li>Élaboration du cahier des charges et conception UI/UX</li>
+    <li>Développement d’une interface utilisateur intuitive (Front-end : React Native, Leaflet)</li>
+    <li>Conception et gestion de la base de données (Méthode PU/UML) : PostgreSQL/PostGIS</li>
+    <li>Back-end : Node.js, Nest.js</li>
+    <li>Déploiement via Docker</li>
+  </ul>
+</div>
+
+<div class="projet">
+  <h3>Administration d’un réseau local (Octobre 2024 – INPHB, Yamoussoukro)</h3>
+  <ul>
+    <li>Mise en place d’un réseau local sécurisé avec routage</li>
+    <li>Gestion des adresses IP et DHCP</li>
+  </ul>
+</div>
+
+<div class="projet">
+  <h3>Système de collecte de données environnementales (Juillet 2024 – UMRI/LIEESE, Yamoussoukro)</h3>
+  <ul>
+    <li>Utilisation des capteurs MQ135 et ENS160/AHT pour détection et collecte des données (température, humidité, CO2, CO, NH3…)</li>
+    <li>Récupération via microcontrôleur ESP32 et envoi des données au serveur</li>
+    <li>Présentation des résultats sous forme de tableau dynamique HTML et enregistrement dans une base de données</li>
+  </ul>
+</div>
+
+<h5>Et bien d'autres projets personnels sont à venir</h5>
+
+  </section>  <!-- CONTACT -->  <footer>
+    <p>Merci de votre visite ! Pour plus d'informations, contactez-moi au <span>+225 05 74 55 19 14</span> ou à l'adresse <a href="mailto:fenikone@gmail.com" style="color: inherit; text-decoration: none;">fenikone@gmail.com</a>.</p>
   </footer>
 </body>
 </html>
